@@ -1,0 +1,155 @@
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+.timecont{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+@keyframes movedown{
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.timecont:nth-child(1){
+    animation-delay: 0s;
+
+}
+.timecont:nth-child(2){
+    animation-delay: 1s;
+
+}
+.timecont:nth-child(3){
+    animation-delay: 2s;
+
+}
+.timecont:nth-child(4){
+    animation-delay: 3s;
+
+}
+.textbox{
+    padding: 20px 30px;
+    background: #dbcfcf;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.left-cont{
+    left: 0%;
+}
+.right-cont{
+    left: 50%;
+}
+.timecont img{
+    position: absolute;
+    width: 40px;
+    border-radius: 55%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+.right-cont img{
+    left: -20px;
+}
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #dbcfcf;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 3.5s linear forwards;
+}
+@keyframes moveline{
+
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+}
+.textbox h3{
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.left-cont-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #dbcfcf;
+    right: -15px;
+}
+.right-cont-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #dbcfcf;
+    left: -15px;
+}
+@media screen and (max-width: 600px){
+
+    .timeline{
+        margin: 50px auto;
+    }
+    .timeline::afterF{
+        left:31px;
+    }
+.timecont{
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+}
+.textbox{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.right-cont{
+    left: 0;
+}
+.left-cont img ,.right-cont img{
+    left: 10px;
+
+}
+.left-cont-arrow,.right-cont-arrow{
+    border-right: 15px solid #fff;
+    border-left: 0;
+    left: -15px;
+}
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

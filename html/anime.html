@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="eng"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,intial-scale=1.8">
+    <title> FAV ANINME </title>
+    <link rel="stylesheet" href="/css/an.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body >
+  <header>
+  
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hidesidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="/index.html">HOME</a></li>
+        <li><a href="anime.html">ANIME</a></li>
+        <li><a href="hollywood.html">HOLLYWOOD</a></li>
+        <li><a href="bollywood.html">BOLLYWOOD</a></li>     
+      </ul>
+      <ul class="nav_links">
+        <li class="favb"><b>FAVB...</b></li>
+        <li class="hideonmobile"><a href="/index.html">HOME</a></li>
+        <li class="hideonmobile"><a href="anime.html">ANIME</a></li>
+        <li class="hideonmobile"><a href="hollywood.html">HOLLYWOOD</a></li>
+        <li class="hideonmobile"><a href="bollywood.html">BOLLYWOOD</a></li>
+        <li class="menu_button"  onclick="showSidebar()">
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+              fill="#5f6368">
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg></a>
+        </li>
+      </ul>
+    </nav>
+    
+  </header>
+  <script>
+    function showSidebar() {
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display ='flex'
+    }
+     function hidesidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+
+     }
+  </script>
+   
+   <section class="container">
+    <div class="card">
+      <div class="card-image ani-1"></div>
+      <h2>ONE PIECE</h2>
+      <p class="text">There once lived a pirate named Gol D. Roger. He obtained wealth, fame, and power to earn the title of Pirate King. When he was captured and about to be executed, he revealed that his treasure called One Piece was hidden somewhere at the Grand Line. </p>
+    <a class="readm" href="https://www.imdb.com/title/tt0388629/">READ MORE</a>
+    </div>
+    <div class="card">
+      <div class="card-image ani-2"></div>
+      <h2>VINLAND</h2>
+      <p class="text">The Vinland Saga follows a young boy named Thorfinn and his quest to seek revenge for his father, Thors. The anime follows the present-time for the first few chapters and then jumps back into Thorfinn's past, giving the reader his backstory and his reason for seeking revenge.</p>
+      <a  class="readm" href="https://www.imdb.com/title/tt10233448/?ref_=nv_sr_srsg_0_tt_6_nm_2_q_vinlan">READ MORE</a>
+    </div> <div class="card">
+      <div class="card-image ani-3"></div>
+      <h2>NARUTO</h2>
+      <p class="text">As a boy, Naruto is ridiculed and ostracized on account of the Nine-Tailed Demon Fox—a malevolent creature that attacked Konohagakure—that was sealed away in his body. Despite this, he aspires to become his village's leader, the Hokage, in order to receive their approval.</p>
+      <a  class="readm"href="https://www.imdb.com/title/tt0409591/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_naruto">READ MORE</a>
+    </div> <div class="card">
+      <div class="card-image ani-4"></div>
+      <h2>BLACK CLOVER</h2>
+      <p class="text" >Set in a world where everyone is given the ability to use magic, the story follows Asta, a young boy born without any magic power who is given a rare grimoire that grants him anti-magic abilities. With his fellow mages from the Black Bulls, Asta plans to become the next Wizard King</p>
+      <a  class="readm"href="https://www.imdb.com/title/tt7441658/?ref_=nv_sr_srsg_0_tt_7_nm_1_q_black%2520clover">READ MORE</a>    
+    </div> <div class="card">
+      <div class="card-image ani-5"></div>
+      <h2>BUNGO STRAY DOGS</h2>
+      <p class="text">Nakajima Atsushi was kicked out of his orphanage, and now he has no place to go and no food. While he is standing by a river, on the brink of starvation, he rescues a man whimsically attempting suicide . That man is Dazai  .</p>
+      <a class="readm"href="https://www.imdb.com/title/tt5679720/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_bungo">READ MORE</a>
+    </div>
+    </section>
+    <footer>
+    <div class="footercontainer">
+      <div class="socialicons">
+        <a href="https://www.linkedin.com/in/tejas-srivastava-761a15215?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/tejas__6.6_?igsh=MXdtcm1samhzNXZrMg=="><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://t.me/tejas2403"><i class="fa-brands fa-telegram"></i></a>
+    </div>
+    <div class="footernav">
+      <ol>
+        <a href="/html/hollywood.html">Hollywood</a>
+        <a href="/html/bollywood.html">Bollywood</a> 
+        <a href="/index.html"> HOME</a>
+      </ol>
+    </div>
+    
+    </div>
+    <div class="footerbottom">
+      <p style="color: beige;">Copyright &copy;2022</p>
+    </div>
+    </footer>
+</body>
+</html>

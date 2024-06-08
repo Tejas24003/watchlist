@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,intial-scale=1.8" />
+  <title>FAVORTIE WATCH</title>
+  <link rel="stylesheet" href="css/an.css" />
+  <link rel="stylesheet" href="css/timeline.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hidesidebar()">
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+              fill="#5f6368">
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg></a>
+        </li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="html/anime.html">ANIME</a></li>
+        <li><a href="html/hollywood.html">HOLLYWOOD</a></li>
+        <li><a href="html/bollywood.html">BOLLYWOOD</a></li>
+      </ul>
+      <ul class="nav_links">
+        <li class="favb"><b>FAVB...</b></u>
+        </li>
+        <li class="hideonmobile"><a href="index.html">HOME</a></li>
+        <li class="hideonmobile"><a href="html/anime.html">ANIME</a></li>
+        <li class="hideonmobile"><a href="html/hollywood.html">HOLLYWOOD</a></li>
+        <li class="hideonmobile"><a href="html/bollywood.html">BOLLYWOOD</a></li>
+        <li class="menu_button" onclick="showSidebar()">
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+              fill="#5f6368">
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg></a>
+        </li>
+      </ul>
+    </nav>
+  
+  </header>
+  <script>
+    function showSidebar() {
+      const sidebar = document.querySelector(".sidebar");
+      sidebar.style.display = "flex";
+    }
+    function hidesidebar() {
+      const sidebar = document.querySelector(".sidebar");
+      sidebar.style.display = "none";
+    }
+  </script>
+  
+
+  <div class="timeline">
+    <div class="timecont left-cont">
+      <img src="imgs/profile.jpg">
+      <div class="textbox">
+        <h3 >ABOUT ME</h3>
+        <h5 style="padding: bottom 15px; ;">TEJAS SRIVASTAVA..</h5>
+        <p>
+          A passionate bachelor computer application graduate student from the <b> DDU University,Gorakhpur</b>.With few weeks of experience in web design and web devlopment  and received a <b>HTML,CSS and Java script certification from Udemy</b>.
+        </p>
+        <span class="left-cont-arrow"></span>
+      </div>
+    </div>
+    <div class="timecont right-cont">
+      <img src="imgs/haku.jpg">
+      <div class="textbox">
+        <h3>ABOUT WEBSITE</h3>
+        <p>
+          This is my very first web-site(project).This site contain few of mine recomdation from <b>Anime,Bollywood and Hollywood movies with IMBD review</b>.
+        </p>
+        <span class="right-cont-arrow"></span>
+      </div>
+    </div>
+    <div class="timecont left-cont">
+      <img src="imgs/imbd.jpg">
+      <div class="textbox">
+        <h3>IMBD</h3>
+        <p>
+          IMDb <b>(an acronym for Internet Movie Database)</b> is an online database of information related to films, television series, podcasts, home videos, video games, and streaming content online – including cast, production crew and personal biographies, plot summaries, trivia, ratings, and fan and critical reviews.
+        </p>
+        <span class="left-cont-arrow"></span>
+      </div>
+    </div>
+    <div class="timecont right-cont">
+      <img src="imgs/ash.jpeg">
+      <div class="textbox">
+        <h3>THANKYOU</h3>
+        <p>
+          The success of every websites depends on number of search and share of that website.
+          Hope you liked my work and you wil share my work.<b>THANK YOU...</b>
+        </p>
+        <span class="right-cont-arrow"></span>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footercontainer">
+      <div class="socialicons">
+        <a
+          href="https://www.linkedin.com/in/tejas-srivastava-761a15215?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+            class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/tejas__6.6_?igsh=MXdtcm1samhzNXZrMg=="><i
+            class="fa-brands fa-instagram"></i></a>
+        <a href="https://t.me/tejas2403"><i class="fa-brands fa-telegram"></i></a>
+      </div>
+      <div class="footernav">
+        <ol>
+          <a href="/html/anime.html">Anime</a>
+          <a href="/html/bollywood.html">Bollywood</a>
+          <a href="/html/hollywood.html">HOLLYWOOD</a>
+        </ol>
+      </div>
+    </div>
+    <div class="footerbottom">
+      <p style="color: beige">Copyright &copy;2022</p>
+    </div>
+  </footer>
+</body>
+
+</html>
